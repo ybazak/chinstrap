@@ -1,0 +1,148 @@
+.countdownHolder{
+	width:650px;
+	margin:0 auto;
+	font: 40px/1.5 'Open Sans Condensed',sans-serif;
+	text-align:center;
+	letter-spacing:-3px;
+}
+
+.position{
+	    display: inline-block;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 50px;
+    background: #fff;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+.digit{
+	position:absolute;
+	display:block;
+	width:1em;
+	border-radius:0.2em;
+	text-align:center;
+	color:#333333;
+	letter-spacing:-1px;
+}
+
+.digit.static {
+    color: #333333;
+    font-weight: bold;
+    font-family: Museo;
+    font-size: 36px;
+}
+/**
+ * You can use these classes to hide parts
+ * of the countdown that you don't need.
+ */
+
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+
+
+.countDiv{
+	display:inline-block;
+	width:20px;
+	height:1.5em;
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:3px;
+	height:3px;
+	background-color:#444;
+	border-radius:50%;
+	left:50%;
+	margin-left:-3px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:0.9em;
+}
+span.countDays:before {
+    content: "Days";
+    position: absolute;
+    top: 135px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    left: 260px;
+    color: #333;
+}
+.countHours:before {
+    content: "Hours";
+    position: absolute;
+    top: 135px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    left: 388px;
+    color: #333;
+}
+.countMinutes:after {
+    content: "Minutes";
+    position: absolute;
+    top: 135px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    left: 510px;
+    color: #333;
+}
+.countSeconds:after {
+    content: "Seconds";
+    position: absolute;
+    top: 135px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    left: 643px;
+    color: #333;
+}
+@media only screen and (max-width: 1100px)
+{
+	span.countDays:before {
+    content: "Days";
+    position: absolute;
+    top: 135px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    left: 200px;
+    color: #333;
+}
+.countHours:before {
+    content: "Hours";
+    position: absolute;
+    top: 135px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    left: 328px;
+    color: #333;
+}
+.countMinutes:after {
+    content: "Minutes";
+    position: absolute;
+    top: 135px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    left: 450px;
+    color: #333;
+}
+.countSeconds:after {
+    content: "Seconds";
+    position: absolute;
+    top: 135px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    left: 583px;
+    color: #333;
+}
+}
